@@ -1,12 +1,12 @@
 // float.go
-package main
+package float
 
 import (
 	"fmt"
 	"math"
 )
 
-func main() {
+func Float() {
 	var a float64 = 10.0
 
 	for i := 0; i < 10; i++ {

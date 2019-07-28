@@ -1,5 +1,5 @@
-// println.go
-package main
+// println_test.go
+package println_test
 
 import (
 	"fmt"
