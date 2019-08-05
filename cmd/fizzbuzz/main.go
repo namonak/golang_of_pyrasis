@@ -1,11 +1,10 @@
-// main.go
 package main
 
 import (
-	"float"
+	"easy_example"
 	_ "fmt"
 )
 
 func main() {
-	float.Float()
+	easy_example.FizzBuzz()
 }
