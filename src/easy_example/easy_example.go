@@ -4,12 +4,13 @@ import "fmt"
 
 func FizzBuzz() {
 	for i := 1; i <= 100; i++ {
+        fizz, buzz := i % 3 == 0, i % 5 == 0
 		switch {
-		case (i%3 == 0) && (i%5 == 0):
+        case fizz && buzz:
 			fmt.Println("FizzBuzz")
-		case i%3 == 0:
+		case fizz:
 			fmt.Println("Fizz")
-		case i%5 == 0:
+		case buzz:
 			fmt.Println("Buzz")
 		default:
 			fmt.Println(i)
