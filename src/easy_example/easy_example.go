@@ -2,16 +2,21 @@ package easy_example
 
 import "fmt"
 
+const (
+    fizz = "Fizz"
+    buzz = "Buzz"
+)
+
 func FizzBuzz() {
 	for i := 1; i <= 100; i++ {
-        fizz, buzz := i % 3 == 0, i % 5 == 0
+        _fizz, _buzz := i % 3 == 0, i % 5 == 0
 		switch {
-        case fizz && buzz:
-			fmt.Println("FizzBuzz")
-		case fizz:
-			fmt.Println("Fizz")
-		case buzz:
-			fmt.Println("Buzz")
+        case _fizz && _buzz:
+			fmt.Printf("%s%s\n", fizz, buzz)
+		case _fizz:
+			fmt.Printf("%s\n", fizz)
+		case _buzz:
+			fmt.Printf("%s\n", buzz)
 		default:
 			fmt.Println(i)
 		}
